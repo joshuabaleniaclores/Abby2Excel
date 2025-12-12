@@ -7,6 +7,8 @@ import { Input } from "@/components/ui/input";
 import { downloadDeliveryExcel, DeliveryItem } from "@/lib/excel";
 import { Loader2, Table as TableIcon, Download, AlertCircle, Wand2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ModeToggle } from "@/components/ui/mode-toggle";
+import { Footer } from "@/components/footer";
 
 export default function Home() {
   const [file, setFile] = useState<File | null>(null);
@@ -66,7 +68,10 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-background p-4 md:p-12 font-sans selection:bg-primary/20">
+    <main className="min-h-screen bg-background p-6 md:p-12 font-sans selection:bg-primary/20 relative">
+      <div className="absolute top-4 right-4 md:top-8 md:right-8">
+        <ModeToggle />
+      </div>
       <div className="max-w-4xl mx-auto space-y-12">
 
         {/* Header */}
@@ -76,8 +81,8 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             className="inline-block"
           >
-            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-foreground bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60">
-              Image to Excel
+            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-foreground bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60 pb-2">
+              Abby2Excel
             </h1>
           </motion.div>
           <motion.p
@@ -86,7 +91,7 @@ export default function Home() {
             transition={{ delay: 0.1 }}
             className="text-muted-foreground text-lg max-w-2xl mx-auto"
           >
-            Upload a delivery receipt or invoice, and we'll extract the data into a formatted Excel file automatically using AI.
+            Upload a delivery receipt, and we'll extract the data into a formatted Excel file automatically using AI.
           </motion.p>
         </header>
 
@@ -147,12 +152,12 @@ export default function Home() {
               exit={{ opacity: 0, y: 20 }}
               className="space-y-6"
             >
-              <div className="flex items-center justify-between">
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                 <h2 className="text-2xl font-bold flex items-center gap-2">
                   <TableIcon className="w-6 h-6 text-primary" />
                   Extracted Data
                 </h2>
-                <Button onClick={handleDownload} variant="default" className="shadow-lg shadow-primary/25">
+                <Button onClick={handleDownload} variant="default" className="w-full sm:w-auto shadow-lg shadow-primary/25">
                   <Download className="mr-2 h-4 w-4" />
                   Download Excel
                 </Button>
@@ -160,8 +165,8 @@ export default function Home() {
 
               <div className="rounded-xl border bg-card shadow-sm overflow-hidden">
                 <div className="overflow-x-auto">
-                  <table className="w-full text-sm text-left">
-                    <thead className="bg-muted/50 text-muted-foreground uppercase text-xs font-semibold">
+                  <table className="w-full text-sm text-left min-w-[800px]">
+                    <thead className="bg-muted/50 text-muted-foreground uppercase text-xs font-semibold whitespace-nowrap">
                       <tr>
                         <th className="px-4 py-3">Date</th>
                         <th className="px-4 py-3">Qty</th>
@@ -235,6 +240,7 @@ export default function Home() {
         </AnimatePresence>
 
       </div>
+      <Footer />
     </main>
   );
 }
