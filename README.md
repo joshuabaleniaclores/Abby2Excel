@@ -4,12 +4,12 @@ Abby2Excel is a powerful "Image to Excel" web application built with Next.js 16 
 
 ## Features
 
--   ** AI-Powered Extraction**: Uses Google's Gemini 2.5 Flash model to intelligently parse unstructured data from images.
--   ** Drag & Drop Upload**: Seamless file upload interface with preview and validation.
--   ** Editable Data**: Review and correct extracted data in an intuitive table interface before exporting.
--   ** Excel Export**: Download structured data as an `.xlsx` file, formatted specifically for Manila Delivery reports.
--   ** Modern Tech Stack**: Built with the latest web technologies for speed and reliability.
--   ** Secure**: API keys are handled server-side, ensuring your credentials are never exposed to the client.
+-   **AI-Powered Extraction**: Uses Google's Gemini 2.5 Flash model to intelligently parse unstructured data from images.
+-   **Drag & Drop Upload**: Seamless file upload interface with preview and validation.
+-   **Editable Data**: Review and correct extracted data in an intuitive table interface before exporting.
+-   **Excel Export**: Download structured data as an `.xlsx` file, formatted specifically for Manila Delivery reports.
+-   **Modern Tech Stack**: Built with the latest web technologies for speed and reliability.
+-   **Secure**: API keys are handled server-side, ensuring your credentials are never exposed to the client.
 
 ##  Tech Stack
 
