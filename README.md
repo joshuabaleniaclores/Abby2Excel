@@ -11,7 +11,7 @@ Abby2Excel is a powerful "Image to Excel" web application built with Next.js 16 
 -   **Modern Tech Stack**: Built with the latest web technologies for speed and reliability.
 -   **Secure**: API keys are handled server-side, ensuring your credentials are never exposed to the client.
 
-##  Tech Stack
+## Tech Stack
 
 -   **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
 -   **Language**: [TypeScript](https://www.typescriptlang.org/)
@@ -21,7 +21,7 @@ Abby2Excel is a powerful "Image to Excel" web application built with Next.js 16 
 -   **Excel Generation**: [SheetJS (xlsx)](https://sheetjs.com/)
 -   **File Handling**: [React Dropzone](https://react-dropzone.js.org/)
 
-##  Getting Started
+## Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine.
 
@@ -59,7 +59,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 5.  **Open the app**
     Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 📖 Usage
+## Usage
 
 1.  **Upload**: Drag and drop an image of a delivery receipt (JPG, PNG, WEBP) into the upload area.
 2.  **Extract**: Click the "Extract Operations" button. The AI will analyze the image.
