@@ -91,7 +91,7 @@ export default function Home() {
             transition={{ delay: 0.1 }}
             className="text-muted-foreground text-lg max-w-2xl mx-auto"
           >
-            Upload a delivery receipt, and we'll extract the data into a formatted Excel file automatically using AI.
+            Upload a delivery receipt, and we'll extract the data into an Abby-formatted Excel file automatically using AI.
           </motion.p>
         </header>
 
