@@ -2,9 +2,6 @@
 
 Abby2Excel is a powerful "Image to Excel" web application built with Next.js 16 and Google's Gemini Flash 2.5 AI model. It allows users to upload images of delivery receipts or invoices, automatically extracts structured data (items, quantities, dates, etc.), and exports it into a formatted Excel spreadsheet.
 
-![Project Status](https://img.shields.io/badge/status-active-success.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-
 ## Features
 
 -   ** AI-Powered Extraction**: Uses Google's Gemini 2.5 Flash model to intelligently parse unstructured data from images.
@@ -78,7 +75,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4.  Push to the branch (`git push origin feature/AmazingFeature`)
 5.  Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
